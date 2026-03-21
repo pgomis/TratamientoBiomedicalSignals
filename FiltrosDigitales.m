@@ -38,4 +38,4 @@ N = fs/fo;          % período del peine
 [B,A] = iircomb(N,bw,'notch'); % función de DSP System toolbox
 figure('Color','w')
 freqz(B,A,4096,fs)
-
+title('Filtro peine (comb) IIR para eliminar 50 Hz y sus armónicas')
